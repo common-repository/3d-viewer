@@ -1,0 +1,31 @@
+{
+    "landingPage": "\/wp-admin\/plugins.php?plugin=3d-viewer",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "latest"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "features": {
+        "networking": true
+    },
+    "steps": [
+        
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "url",
+                "url": "https:\/\/downloads.wordpress.org\/plugin\/3d-viewer.zip"
+            },
+            "options": {
+                "activate": true
+            }
+        }
+    ]
+}
